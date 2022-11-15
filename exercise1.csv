@@ -1,0 +1,6 @@
+,model,Score (RMSE),Hyperparams used,Features dropped,New features created,Runtime trainining + inference (seconds),Hardware used (GPU/CPU/TPU),Explainability (top 3 features)
+0,Linear Regression,156.168,['None'],"[Index(['windspeed', 'pollution', 'traffic', 'month', 'year', 'day', 'rush_h',
+       'offpeak_h'],
+      dtype='object')]","['season_2', 'season_3', 'season_4', 'weather_2', 'weather_3', 'weather_4', 'year', 'offpeak_h', 'rush_h']",0.03,CPU,"['holiday', 'workingday', 'weather_4']"
+1,Decision Tree,85.89,"[{'max_depth': 10, 'max_features': 'auto'}]","['weather_2', 'holiday', 'weather_4']","['season_2', 'season_3', 'season_4', 'weather_2', 'weather_3', 'weather_4', 'year', 'offpeak_h', 'rush_h']",0.55,CPU,"[Index(['offpeak_h', 'pollution', 'rush_h'], dtype='object')]"
+2,Random Forest,74.76,"[{'max_depth': 10, 'max_features': 'auto'}]","['weather_2', 'holiday', 'weather_4']","['season_2', 'season_3', 'season_4', 'weather_2', 'weather_3', 'weather_4', 'year', 'offpeak_h', 'rush_h']",26.12,CPU,"[Index(['offpeak_h', 'pollution', 'rush_h'], dtype='object')]"
